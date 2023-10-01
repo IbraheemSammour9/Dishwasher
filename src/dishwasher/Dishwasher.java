@@ -2,7 +2,6 @@ package dishwasher;
 
 import java.util.Scanner;
 
-
 public class Dishwasher {
 	static Scanner input = null;
 	public static boolean detail;
