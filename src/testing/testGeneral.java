@@ -2,6 +2,8 @@ package testing;
 
 import static org.junit.Assert.*;
 
+import java.util.Scanner;
+
 import org.junit.Test;
 
 import dishwasher.FirstProgram;
@@ -78,5 +80,20 @@ public class testGeneral {
 	@Test
 	public void testtimeProcess() {
 		general.timeProcess(1); 
+	}
+	
+	@Test
+	public void testgeneraltimeProcess() {
+		general.timeProcess(4);
+	}
+
+	@Test
+	public void testisClosed() {
+		general.isClosed();
+		}
+	
+	@Test
+	public void testsetClosed() {
+		general.setClosed(false);
 	}
 	}
