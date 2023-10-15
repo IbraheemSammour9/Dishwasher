@@ -12,6 +12,7 @@ public class Dishwasher {
 				+ "\n\t\t    3 for Heavy Cycle      (15 seconds)");
 	}
 	
+	
 	///////////////////////////////// main //////////////////////////////////
 
 	public static void main(String[] args) {

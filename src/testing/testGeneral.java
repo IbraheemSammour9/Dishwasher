@@ -7,7 +7,7 @@ import dishwasher.General;
 import org.junit.Before;
 
 public class testGeneral {
-
+ 
 	General general;
 	
 	@Before
