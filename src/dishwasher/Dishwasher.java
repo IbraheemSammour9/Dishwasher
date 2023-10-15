@@ -6,7 +6,7 @@ public class Dishwasher {
 	static Scanner input = null;
 	public static boolean detail;
 	public static void welcome() {
-		
+		 
 		System.out.println("Choose a program:   1 for Quick Wash Cycle (5  seconds)"
 				+ "\n\t\t    2 for High Temp Cycle  (10 seconds)"
 				+ "\n\t\t    3 for Heavy Cycle      (15 seconds)");
