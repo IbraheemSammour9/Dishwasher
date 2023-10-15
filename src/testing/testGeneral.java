@@ -3,22 +3,36 @@ package testing;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import dishwasher.FirstProgram;
 import dishwasher.General;
+import dishwasher.SecondProgram;
+import dishwasher.ThirdProgram;
+
 import org.junit.Before;
 
 public class testGeneral {
  
 	General general;
+	FirstProgram first;
+	SecondProgram second;
+	ThirdProgram third;
 	
 	@Before
 	public void init() {
 		general = new General();
+		first = new FirstProgram();
+		
 	}
-	
 	
 	@Test
 	public void testdoor() {
 		general.door();
+	}
+	
+	@Test
+	public void testmain() {
+		General.main(null);
 	}
 	
 	@Test
@@ -62,9 +76,23 @@ public class testGeneral {
 	}
 	
 	@Test
-	public void testtimeProcess() {
-		general.chooseThisProgram();
-		general.timeProcess(1);      // test the first program of dishwasher
+	public void testfirstgeneralDetailsFalse() {
+		first.generalDetails(false);
 	}
 	
+	@Test
+	public void testfirstgeneralDetailsTrue() {
+		first.generalDetails(true);	
+	}
+
+	@Test
+	public void testtimeProcess() {
+		general.timeProcess(1);      // test the first program of dishwasher
+	}
+	@Test
+	public void testtimeProcessFirst() {
+		general.chooseThisProgram();
+		first.timeProcess(1);      // test the first program of dishwasher
+		
+	}
 	}
