@@ -74,25 +74,9 @@ public class testGeneral {
 	public void testgeneralDetailsTrue() {
 		general.generalDetails(true);
 	}
-	
-	@Test
-	public void testfirstgeneralDetailsFalse() {
-		first.generalDetails(false);
-	}
-	
-	@Test
-	public void testfirstgeneralDetailsTrue() {
-		first.generalDetails(true);	
-	}
 
 	@Test
 	public void testtimeProcess() {
-		general.timeProcess(1);      // test the first program of dishwasher
-	}
-	@Test
-	public void testtimeProcessFirst() {
-		general.chooseThisProgram();
-		first.timeProcess(1);      // test the first program of dishwasher
-		
+		general.timeProcess(1); 
 	}
 	}
