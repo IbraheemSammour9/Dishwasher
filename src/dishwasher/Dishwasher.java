@@ -11,7 +11,6 @@ public class Dishwasher {
 				+ "\n\t\t    2 for High Temp Cycle  (10 seconds)"
 				+ "\n\t\t    3 for Heavy Cycle      (15 seconds)");
 	}
-	
 	 
 	
 	///////////////////////////////// main //////////////////////////////////
