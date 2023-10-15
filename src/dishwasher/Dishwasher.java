@@ -2,11 +2,9 @@ package dishwasher;
 
 import java.util.Scanner;
 
-
 public class Dishwasher {
 	static Scanner input = null;
 	public static boolean detail;
-	
 	public static void welcome() {
 		
 		System.out.println("Choose a program:   1 for Quick Wash Cycle (5  seconds)"
@@ -26,8 +24,7 @@ public class Dishwasher {
 		
 		general.door();  //check if the door (open , closed)
 		welcome();     //print choose a program..
-		while(General.count < 3) {
-		     
+		while(General.count < 3) {  
 
 		try {      //print incorrect if the user input any non integer number  
 		input = new Scanner(System.in);  //choose program (1-3)

@@ -1,7 +1,7 @@
 package dishwasher;
 
 public class FirstProgram extends General{
-		
+	
 		@Override
 	    public void generalDetails(boolean d){ 
     

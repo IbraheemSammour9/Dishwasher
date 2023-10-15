@@ -14,8 +14,7 @@ import java.time.format.DateTimeFormatter;
 	public static char startGeneral;
 	public static int count = 0;
 	public static boolean closed;
-	
-	
+
 	public void door() {        //to make sure the door is close
 		
 		closed = false;
@@ -29,7 +28,7 @@ import java.time.format.DateTimeFormatter;
 	}
 	
 
-	public static char toSeeDetails() {
+	public char toSeeDetails() {
 		System.out.println("\nYou want to see the details about this program? (y: yes  n: no)");
 		inputP = new Scanner(System.in);  //choose program
 		answer = inputP.next().charAt(0);
@@ -45,14 +44,15 @@ import java.time.format.DateTimeFormatter;
 	
 	
 	public void answerOfDetails() {
-		char choose = General.toSeeDetails();  //to input y or n
+		System.out.println("answer of details");
+		char choose = toSeeDetails();  //to input y or n
 	    
-    	if(choose == 'y') {detail = true;}     
+    	if(choose == 'y') {detail = true;}           //from here
     	else if(choose == 'n'){detail = false;}
     	else {	
     	System.out.println("incorrect input..");
     	answerOfDetails();  //recursion
-	    }
+	    }                                             //.....
 	}
 	
 	
@@ -65,6 +65,7 @@ import java.time.format.DateTimeFormatter;
 	
 	
 	public void startProgram (int a) { //check if the user choose current program
+		System.out.println("startProgram!");  // testing...
 		chooseThisProgram();
 		if(startGeneral == 'y') {
 			printTime(a);
@@ -95,7 +96,7 @@ import java.time.format.DateTimeFormatter;
 	    else {                     //print (Ok as you like) if the user input n
 	    	System.out.println("Ok as you like\n");
 	    }
-		}
+	}
 	
 	
 	public void timeProcess(int prog) {    //print the process of time (*) ..loading
@@ -107,7 +108,7 @@ import java.time.format.DateTimeFormatter;
 	            System.out.print("*");
 			 	}
 	        } catch (InterruptedException e) {
-	            //e.printStackTrace();
+	            System.out.println(e);
 	        }
 		System.out.println("\n\nFinished.\n");
 		if(count != 2) {
@@ -130,10 +131,10 @@ import java.time.format.DateTimeFormatter;
 	
 	//****Getter and Setters****
 	
-	public static char getAnswer() {
+	public char getAnswer() {
 		return answer;
 	}
-	public static void setAnswer(char answer) {
+	public void setAnswer(char answer) {
 		General.answer = answer;
 	}
 	public int getNumber() {
@@ -148,34 +149,34 @@ import java.time.format.DateTimeFormatter;
 	public void setSeconds(int seconds) {
 		this.seconds = seconds;
 	}
-	public static Scanner getInputP() {
+	public Scanner getInputP() {
 		return inputP;
 	}
-	public static void setInputP(Scanner inputP) {
+	public void setInputP(Scanner inputP) {
 		General.inputP = inputP;
 	}
-	public static Scanner getInputY() {
+	public Scanner getInputY() {
 		return inputY;
 	}
-	public static void setInputY(Scanner inputY) {
+	public void setInputY(Scanner inputY) {
 		General.inputY = inputY;
 	}
-	public static char getStartGeneral() {
+	public char getStartGeneral() {
 		return startGeneral;
 	}
-	public static void setStartGeneral(char startGeneral) {
+	public void setStartGeneral(char startGeneral) {
 		General.startGeneral = startGeneral;
 	}
-	public static int getCount() {
+	public int getCount() {
 		return count;
 	}
-	public static void setCount(int count) {
+	public void setCount(int count) {
 		General.count = count;
 	}
-	public static boolean isClosed() {
+	public boolean isClosed() {
 		return closed;
 	}
-	public static void setClosed(boolean closed) {
+	public void setClosed(boolean closed) {
 		General.closed = closed;
 	}
 	}
