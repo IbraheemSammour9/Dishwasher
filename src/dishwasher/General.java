@@ -51,7 +51,7 @@ import java.time.format.DateTimeFormatter;
     	else if(choose == 'n'){detail = false;}
     	else {	
     	System.out.println("incorrect input..");
-    	answerOfDetails();  //recursion
+    	answerOfDetails();  //recursion 
 	    }                                             //.....
 	}
 	

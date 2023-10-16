@@ -131,11 +131,30 @@ public class testGeneral {
 	}
 	
 	@Test
-	public void testgetStartGeneral() {
+	public void testgetStartGeneralY() {
+		general.setStartGeneral('y');
 		assertEquals('y',general.getStartGeneral());
 	}
 	
-	@Test void testgetCount() {
-		assertEquals(1,general.getCount());
-		} 
+	@Test
+	public void testgetStartGeneralN() {
+		general.setStartGeneral('n');
+		assertEquals('n',general.getStartGeneral());
 	}
+	
+	@Test
+	public void testgetCount() {
+		general.setCount(0);
+		assertEquals(0,general.getCount());
+		} 
+	
+	@Test
+	public void testheatingWater() {
+		general.heatingWater();
+	}
+	
+	@Test
+	public void teststopHeatingWater() {
+		general.stopHeatingWater();
+	}
+	} 
