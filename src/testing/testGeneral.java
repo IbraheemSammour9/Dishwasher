@@ -84,7 +84,7 @@ public class testGeneral {
 	
 	@Test
 	public void testgeneraltimeProcess() {
-		general.timeProcess(4);
+		general.timeProcess(1);
 	}
 
 	@Test
@@ -96,4 +96,46 @@ public class testGeneral {
 	public void testsetClosed() {
 		general.setClosed(false);
 	}
+	
+	@Test
+	public void testAnswer() {
+		general.setAnswer('y');
+		assertEquals('y',general.getAnswer());
+	}
+	
+	
+	@Test
+	public void testNumber() {
+		general.setNumber(1);
+		assertEquals(1,general.getNumber());
+	}
+	
+
+	
+	@Test
+	public void testgetSeconds() {
+		general.setSeconds(1);
+		assertEquals(1,general.getSeconds());
+	}
+	
+	@Test
+	public void testgetInputP() {
+		general.setInputP(null);
+		assertEquals(null,general.getInputP());
+	}
+	
+	@Test
+	public void testgetInputY() {
+		general.setInputY(null);
+		assertEquals(null,general.getInputY());
+	}
+	
+	@Test
+	public void testgetStartGeneral() {
+		assertEquals('y',general.getStartGeneral());
+	}
+	
+	@Test void testgetCount() {
+		assertEquals(1,general.getCount());
+		} 
 	}
